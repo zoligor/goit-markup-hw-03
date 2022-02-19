@@ -53,7 +53,7 @@ p:last-child {
   list-style: none;
 }
 .container {
-  width: 1170px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -62,10 +62,31 @@ p:last-child {
 /* heder */
 .header-container {
   display: flex;
+  align-items: center;
 }
+
+.header-link {
+  margin-right: 93px;
+}
+.nav-item {
+  margin-right: 50px;
+}
+.nav-item:last-child {
+  margin: 0;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  margin-right: 331px;
+}
+.header-contacts-mail {
+  margin-right: 50px;
+}
+
 .header-wrapper {
   display: flex;
 }
+
 .header {
   background-color: var(--primary-bg-white);
 }
@@ -110,6 +131,7 @@ p:last-child {
   text-decoration: none;
 }
 .header-contacts {
+  padding: 0;
   list-style: none;
 }
 .header-contacts-mail:hover,
@@ -125,6 +147,7 @@ p:last-child {
   color: var(--secondary-white-color);
   text-decoration: none;
 }
+
 .header-contacts-tel:hover,
 .header-contacts-tel:focus {
   color: var(--accent-color);
