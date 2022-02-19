@@ -63,6 +63,7 @@ p:last-child {
 .header-container {
   display: flex;
   align-items: center;
+  height: 81px;
 }
 
 .header-link {
@@ -77,7 +78,7 @@ p:last-child {
 .nav-list {
   display: flex;
   align-items: center;
-  margin-right: 331px;
+  /* margin-right: 331px; */
 }
 .header-contacts-mail {
   margin-right: 50px;
@@ -86,7 +87,9 @@ p:last-child {
 .header-wrapper {
   display: flex;
 }
-
+.header-contacts {
+  margin-left: auto;
+}
 .header {
   background-color: var(--primary-bg-white);
 }
