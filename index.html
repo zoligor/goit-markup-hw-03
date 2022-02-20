@@ -12,12 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    
     <!-- Нормализация стилей -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Кастомные стили -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -62,60 +60,63 @@
     <main>
       <!-- hero -->
       <section class="hero">
-        <div class="container"
-        <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
+        <div class="container">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-button-main-button" type="button">
           Заказать услугу
         </button>
-      </div>
+        </div>
+       
       </section>
 
       <!-- feature -->
       <section class="section">
-        <div class="container"
-        <h2 hidden>Особенности</h2>
-        <ul class="section-list list">
-          <li class="section-item">
-            <h3 class="subtitle">Внимание к деталям</h3>
-            <p class="section-txt">
+        <div class="container">
+          
+              <h2 hidden>Особенности</h2>
+                <ul class="section-list list">
+                  <li class="section-item">
+                    <h3 class="subtitle">Внимание к деталям</h3>
+                    <p class="section-txt">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
-            </p>
-          </li>
+                    </p>
+                  </li>
 
-          <li class="section-item">
-            <h3 class="subtitle">Пунктуальность</h3>
-            <p class="section-txt">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
+                  <li class="section-item">
+                    <h3 class="subtitle">Пунктуальность</h3>
+                    <p class="section-txt">
+                   Задача организации, в особенности же рамки и место обучения кадров
+                  влечет за собой.
+                    </p>
+                  </li>
 
-          <li class="section-item">
-            <h3 class="subtitle">Планирование</h3>
-            <p class="section-txt">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
+                  <li class="section-item">
+                    <h3 class="subtitle">Планирование</h3>
+                    <p class="section-txt">
+                 Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                    </p>
+                 </li>
 
-          <li class="section-item">
-            <h3 class="subtitle">Современные технологии</h3>
-            <p class="section-txt">
+                  <li class="section-item">
+                     <h3 class="subtitle">Современные технологии</h3>
+                    <p class="section-txt">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
-            </p>
-          </li>
-        </ul>
-      </div>
+                    </p>
+                  </li>
+                </ul>
+          
+        </div> 
       </section>
 
       <!-- What are we doing -->
       <section class="section">
-        <div class="container"
-        <h2 class="title">Чем мы занимаемся</h2>
-        <ul class="section-list list">
-          <li class="section-item">
+        <div class="container">
+          <h2 class="title">Чем мы занимаемся</h2>
+            <ul class="section-list list">
+              <li class="section-item work">
             <img
               src="./images/img-1.jpg"
               alt="программирование"
@@ -123,7 +124,7 @@
               height="294"
             />
           </li>
-          <li class="section-item">
+          <li class="section-item work">
             <img
               src="./images/img-2.jpg"
               alt="программы для прошивки смартфонов"
@@ -131,7 +132,7 @@
               height="294"
             />
           </li>
-          <li class="section-item">
+          <li class="section-item work">
             <img
               src="./images/img-3.jpg"
               alt="разработка игр для адроид  "
@@ -140,39 +141,69 @@
             />
           </li>
         </ul>
+        </div>
+        
       </div>
       </section>
 
       <!-- our teams -->
       <section class="section">
-        <div class="container"
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="section-list list">
-          <li class="section-item">
-            <img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270" />
-            <h3 class="subtitle-teams">Игорь Демьяненко</h3>
-            <p class="section-txt-teams" lang="en">Product Designer</p>
-          </li>
+        <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+              <ul class="section-list list">
 
-          <li class="section-item">
-            <img src="./images/img-5.jpg" alt="Ольга Репина" width="270" />
-            <h3 class="subtitle-teams">Ольга Репина</h3>
-            <p class="section-txt-teams" lang="en">Frontend Developer</p>
-          </li>
+                <li class="section-item photo">
+                  <article class="card">
+                    <div class="card-thumb">
+                      <img src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270" />
+                    </div>
+                  
+                    <div class="card-content">
+                      <h3 class="subtitle-teams">Игорь Демьяненко</h3>
+                      <p class="section-txt-teams" lang="en">Product Designer</p>
+                    </div>
+                  </article>
+                </li>
 
-          <li class="section-item">
-            <img src="./images/img-6.jpg" alt="Николай Тарасов" width="270" />
-            <h3 class="subtitle-teams">Николай Тарасов</h3>
-            <p class="section-txt-teams" lang="en">Marketing</p>
-          </li>
+                <li class="section-item photo">
+                  <article class="card">
+                    <div class="card-thumb">
+                      <img src="./images/img-5.jpg" alt="Ольга Репина" width="270" />
+                      </div>
+                    <div class="card-content">
+                      <h3 class="subtitle-teams">Ольга Репина</h3>
+              <p class="section-txt-teams" lang="en">Frontend Developer</p>
+                    </div>
+                  </article>
+                </li>
 
-          <li class="section-item">
-            <img src="./images/img-7.jpg" alt="Михаил Ермаков" width="270" />
-            <h3 class="subtitle-teams">Михаил Ермаков</h3>
-            <p class="section-txt-teams" lang="en">UI Designer</p>
-          </li>
-        </ul>
-      </div>
+                <li class="section-item photo">
+                  <article class="card">
+                    <div class="card-thumb">
+                  <img src="./images/img-6.jpg" alt="Николай Тарасов" width="270" />
+                    </div>
+                    <div class="card-content">
+                      <h3 class="subtitle-teams">Николай Тарасов</h3>
+              <p class="section-txt-teams" lang="en">Marketing</p>
+                    </div>
+              </article>
+                </li>
+
+                <li class="section-item photo">
+                  <article class="card">
+                    <div class="card-thumb">
+                  <img src="./images/img-7.jpg" alt="Михаил Ермаков" width="270" />
+                    </div>
+                   <div class="card-content">
+                     <h3 class="subtitle-teams">Михаил Ермаков</h3>
+              <p class="section-txt-teams" lang="en">UI Designer</p>
+                   </div> 
+                   </article>
+                </li>
+              </ul>
+        </div>
+        
+    
       </section>
     </main>
 

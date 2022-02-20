@@ -63,7 +63,9 @@ p:last-child {
 .header-container {
   display: flex;
   align-items: center;
-  height: 81px;
+  height: 80px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-link {
@@ -78,7 +80,6 @@ p:last-child {
 .nav-list {
   display: flex;
   align-items: center;
-  /* margin-right: 331px; */
 }
 .header-contacts-mail {
   margin-right: 50px;
@@ -162,9 +163,16 @@ p:last-child {
 /* main */
 /* hero */
 .hero {
+  text-align: center;
   background-color: var(--primary-bg-dark);
 }
 .hero-title {
+  width: 696px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -175,6 +183,7 @@ p:last-child {
   background-color: var();
 }
 .hero-button-main-button {
+  width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -190,11 +199,44 @@ p:last-child {
 }
 
 /* feature */
+
 /* what are you doing */
+.feature {
+  width: 1170px;
+  height: 101px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-list {
+  padding-top: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+
   list-style: none;
 }
+.section-list:last-child {
+  margin-bottom: 94px;
+}
+.section-item {
+  justify-content: space-between;
+  padding-top: 94px;
+  margin-bottom: 0;
+  width: 270px;
+  margin-right: 30px;
+}
+.work {
+  /* display: flex; */
+  width: 1170px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section-item:last-child {
+  margin: 0;
+}
 .subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -212,6 +254,7 @@ p:last-child {
   color: var(--secondary-white-color);
 }
 .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -220,7 +263,9 @@ p:last-child {
 
   color: var(--secondary-dark-color);
 }
+/* our teams */
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -228,8 +273,31 @@ p:last-child {
   letter-spacing: 0.03em;
 
   color: var(--secondary-dark-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-content {
+  padding: 10px;
+}
+.photo {
+  text-align: center;
+  width: 270px;
+  height: 368px;
+  margin-right: 30px;
+  padding-top: 0;
+  padding-bottom: 94px;
 }
 .subtitle-teams {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
