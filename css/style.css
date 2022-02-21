@@ -381,7 +381,23 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header-container {
+.filters {
+  width: 611px;
+  height: 54px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filters-list {
+  display: flex;
+
+  margin-left: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  justify-content: space-between;
+}
+.filters-list:last-child {
+  margin-right: 0;
 }
 .section-btn {
   list-style: none;
