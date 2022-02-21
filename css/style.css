@@ -378,6 +378,9 @@ img {
 }
 /* Портфолио */
 
+.header {
+  border: 1px solid #ececec;
+}
 .section-btn {
   list-style: none;
 }
