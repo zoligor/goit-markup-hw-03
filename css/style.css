@@ -379,7 +379,9 @@ img {
 /* Портфолио */
 
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
 }
 .section-btn {
   list-style: none;
