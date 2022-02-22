@@ -17,7 +17,10 @@
 
   --primary-bg-dark: #2f303a;
   --secondary-dark-color: #212121;
-  /* -- */
+
+  /* gap */
+
+  --projects-gap: 30px;
 }
 
 /* body */
@@ -163,8 +166,13 @@ p:last-child {
 /* main */
 /* hero */
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
   text-align: center;
-  background-color: var(--primary-bg-dark);
+
+  background: var(--primary-bg-dark);
 }
 .hero-title {
   width: 696px;
@@ -264,6 +272,11 @@ p:last-child {
   color: var(--secondary-dark-color);
 }
 /* our teams */
+.teams {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -280,7 +293,7 @@ img {
   height: auto;
   margin-bottom: 30px;
 }
-.card {
+.card-teams {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -309,13 +322,16 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-
   letter-spacing: 0.03em;
 
   color: var(--secondary-white-color);
 }
 /* footer */
 .footer {
+  display: flex;
+  height: 252px;
+  align-items: center;
+
   background-color: var(--primary-bg-dark);
 }
 .header-link-footer {
@@ -337,8 +353,12 @@ img {
 
   color: var(--accent-color);
 }
+.logo {
+  padding-bottom: 20px;
+}
 .addres-list-item {
   list-style: none;
+  padding-bottom: 9px;
 }
 .addres-city {
   font-style: normal;
@@ -421,27 +441,36 @@ img {
 /* our projects */
 .our-projects {
   width: 1200px;
-  background-color: #dbdbdb;
+  padding-bottom: 94px;
+}
+a {
+  text-decoration: none;
 }
 .projects {
   padding: 0;
   margin: 0;
-  outline: 1px solid tomato;
   list-style: none;
 
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--projects-gap));
+  margin-top: calc(-1 * var(--projects-gap));
 }
 .projects > .projects-card {
-  outline: 1px solid rgb(5, 53, 53);
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc(100% / 3 - var(--projects-gap));
+  margin-left: var(--projects-gap);
+  margin-top: var(--projects-gap);
+}
+.card-projects-thumb {
+  outline: 1px solid teal;
 }
 .projects-card {
-  text-decoration: none;
+  outline: 1px solid red;
+}
+.project-card-content {
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .title-portfolio {
@@ -453,6 +482,7 @@ img {
   color: var(--secondary-dark-color);
 }
 .title-portfolio-subtext {
+  padding-bottom: 4px;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
