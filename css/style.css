@@ -419,8 +419,26 @@ img {
 }
 
 /* our projects */
+.our-projects {
+  width: 1200px;
+  background-color: #dbdbdb;
+}
 .projects {
+  padding: 0;
+  margin: 0;
+  outline: 1px solid tomato;
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects > .projects-card {
+  outline: 1px solid rgb(5, 53, 53);
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .projects-card {
   text-decoration: none;
